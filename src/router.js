@@ -13,6 +13,18 @@ export default new Router({
       component: () => import('./views/jr.vue'),
     },
     {
+      path: '/parent1',
+      component: () => import('./views/Parent1.vue'),
+    },
+    {
+      path: '/parent2',
+      component: () => import('./views/Parent2.vue'),
+    },
+    {
+      path: '/parent3',
+      component: () => import('./views/Parent3.vue'),
+    },
+    {
       path: '/databinding',
       component: () => import('./views/DataBinding.vue'),
     },
