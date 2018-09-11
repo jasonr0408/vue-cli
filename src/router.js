@@ -17,6 +17,10 @@ export default new Router({
       component: () => import('./views/DataBinding.vue'),
     },
     {
+      path: '/directives',
+      component: () => import('./views/Directives.vue'),
+    },
+    {
       path: '/lifecycle',
       component: () => import('./views/LifeCycle.vue'),
     },
