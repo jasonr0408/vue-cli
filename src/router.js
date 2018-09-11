@@ -9,6 +9,16 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
+      path: '/jr',
+      name: 'jr',
+      component: () => import('./views/jr.vue'),
+    },
+    {
+      path: '/lifecycle',
+      name: 'lifecycle',
+      component: () => import('./views/lifecycle.vue'),
+    },
+    {
       path: '/',
       name: 'home',
       component: Home,
