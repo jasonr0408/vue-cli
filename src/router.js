@@ -10,13 +10,15 @@ export default new Router({
   routes: [
     {
       path: '/jr',
-      name: 'jr',
       component: () => import('./views/jr.vue'),
     },
     {
+      path: '/databinding',
+      component: () => import('./views/DataBinding.vue'),
+    },
+    {
       path: '/lifecycle',
-      name: 'lifecycle',
-      component: () => import('./views/lifecycle.vue'),
+      component: () => import('./views/LifeCycle.vue'),
     },
     {
       path: '/',
