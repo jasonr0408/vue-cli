@@ -10,7 +10,7 @@ export default new Router({
   routes: [
     {
       path: '/jr',
-      component: () => import('./views/jr.vue'),
+      component: () => import('./views/JR.vue'),
     },
     {
       path: '/parent1',
