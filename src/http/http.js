@@ -4,16 +4,9 @@ import app from '@/main'; // import the instance
 
 /* eslint-disable func-names, prefer-arrow-callback */
 const Http = axios.create({
-<<<<<<< HEAD
-  baseURL: '/mystery/member/',
-  transformRequest: [function (data) {
-    const returnData = qs.stringify(data);
-
-=======
   baseURL: '/api',
   transformRequest: [function (data) {
     const returnData = qs.stringify(data);
->>>>>>> dc tranning done
     return returnData;
   }],
 });
