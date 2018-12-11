@@ -2,16 +2,6 @@ import http from '@/http/http';
 
 export default {
   // login
-<<<<<<< HEAD
-  login(form) {
-    return http.post('/login', form);
-  },
-  logout() {
-    return http.put('/logout');
-  },
-  getSession() {
-    return http.get('/session');
-=======
   getUser1() {
     return http.get('/users');
   },
@@ -26,6 +16,5 @@ export default {
   },
   postUser(form) {
     return http.post('/user', form);
->>>>>>> dc tranning done
   },
 };
