@@ -14,4 +14,12 @@ module.exports = {
     //   .set('base', resolve('src/base'))
     //   .set('static', resolve('src/static'));
   },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8088',
+        changeOrigin: true,
+      },
+    },
+  },
 };

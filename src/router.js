@@ -8,13 +8,39 @@ export default new Router({
   // base: process.env.BASE_URL,
   routes: [
     {
-      path: '/login',
-      component: () => import('./views/Login.vue'),
+      path: '/home',
+      // meta: { auth: true }, // 需驗證
+      component: () => import('./views/Home.vue'),
     },
     {
-      path: '/home',
-      meta: { auth: true }, // 需驗證
-      component: () => import('./views/JR.vue'),
+      path: '/lifecycle',
+      component: () => import('./views/Lifecycle.vue'),
     },
+    {
+      path: '/databinding',
+      component: () => import('./views/DataBinding.vue'),
+    },
+    {
+      path: '/directives',
+      component: () => import('./views/Directives.vue'),
+    },
+    {
+      path: '/parent1',
+      component: () => import('./views/Parent1.vue'),
+    },
+    {
+      path: '/parent2',
+      component: () => import('./views/Parent2.vue'),
+    },
+    {
+      path: '/parent3',
+      component: () => import('./views/Parent3.vue'),
+    },
+    {
+      path: '/axios',
+      component: () => import('./views/Axios.vue'),
+    },
+
+
   ],
 });
